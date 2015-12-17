@@ -1,3 +1,3 @@
-# Rock-Paper-Scissors-vs-COMP-C-console-app-
+# Rock-Paper-Scissors-vs-COMP-C++-console-app-
 Rock, Paper, Scissors vs COMP!( C++ console app)
-I had a wonderful time making this project and I'm going to have an even more wonderful time playing this game in between games of League of Legends. I used ASCI art for the rock paper and scissors moves. I would say that was the hardest part. The rest was simple game and menu logic. I also added a wisecracking computer player. It's remarks are random using srand. Please check it out and enjoy!
+I had a wonderful time making this project and I'm going to have an even more wonderful time playing this game in between games of League of Legends. I browsed Google for ASCII art for the rock paper and scissors moves. I would say that was the hardest part. The rest was simple game and menu logic that was wrapped into a RPS game class. Once an RPS game object is instantiated in the main, I just call the run member function. I also added a wisecracking computer player. It's remarks are random using srand. Please check it out and enjoy!
