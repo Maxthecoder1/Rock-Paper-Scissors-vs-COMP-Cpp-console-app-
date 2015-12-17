@@ -70,7 +70,7 @@ public:
 
 	void ccalculatemove()
 	{
-		srand(time(0));
+		
 		compmove = 1+(rand() % 3);
 		switch (compmove) 
 		{
@@ -102,7 +102,7 @@ public:
 
 	void computertalks()
 	{
-		srand(time(0));
+		
 		ctalk = 1 + (rand() % 6);
 		switch (ctalk) {
 		case 1:
@@ -145,6 +145,8 @@ public:
 	
 	void run()
 	{
+		cout << "IT'S TIME TO PLAY ROCK, PAPER, AND SCISSORS!!!\n";
+		cout << "MAXIMIZE THE WINDOW FOR COOLER GAMEPLAY!\n\n";
 		getmove();
 		hcalculatemove();
 		ccalculatemove();
@@ -156,9 +158,9 @@ public:
 
 int main() 
 {
+	srand(time(0));
 	RPS newgame;
-	cout << "IT'S TIME TO PLAY ROCK, PAPER, AND SCISSORS!!!\n";
-	cout << "MAXIMIZE THE WINDOW FOR COOLER GAMEPLAY!\n\n";
+	
 	newgame.run();
 	system("PAUSE");
 	return 0;
