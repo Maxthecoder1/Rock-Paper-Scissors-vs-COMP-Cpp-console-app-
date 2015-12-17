@@ -12,6 +12,8 @@ private:
 	char hmove, cmove; //holds designation for move to calculate winner
 
 public:
+	RPS() { run(); }//default constructor calls run function
+
 	void showscore() { cout << "\t\tSCORE\n\t\t*****\nHUMAN\t\tDRAW\t\tCOMPUTER\n" << humanscore << "\t\t" << drawscore << "\t\t" << compscore<<endl<<endl; }
 	
 	void rockmove() 
@@ -128,12 +130,12 @@ public:
 	void checkwinner()
 	{
 		if (hmove == cmove) { cout << "IT'S A DRAW!\n"; drawscore++; }
-		if (hmove == 'r'&&cmove == 's') { cout << "ROCK BEATS SCISSORS SO THE HUMAN WINS!\n"; humanscore++; }
-		if (hmove == 's'&&cmove == 'p') { cout << "SCISSORS BEAT PAPER SO THE HUMAN WINS!\n"; humanscore++; }
-		if (hmove == 'p'&&cmove == 'r') { cout << "PAPER BEATS ROCK SO THE HUMAN WINS!\n"; humanscore++; }
-		if (hmove == 's'&&cmove == 'r') { cout << "ROCK BEATS SCISSORS SO THE COMPUTER WINS!\n"; computertalks(); compscore++; }
-		if (hmove == 'p'&&cmove == 's') { cout << "SCISSORS BEAT PAPER SO THE COMPUTER WINS!\n"; computertalks(); compscore++; }
-		if (hmove == 'r'&&cmove == 'p') { cout << "PAPER BEATS ROCK SO THE COMPUTER WINS!\n"; computertalks(); compscore++; }
+		if (hmove == 'r'&&cmove == 's') { cout << "ROCK BEATS SCISSORS SO THE HUMAN WINS!\n\n"; humanscore++; }
+		if (hmove == 's'&&cmove == 'p') { cout << "SCISSORS BEAT PAPER SO THE HUMAN WINS!\n\n"; humanscore++; }
+		if (hmove == 'p'&&cmove == 'r') { cout << "PAPER BEATS ROCK SO THE HUMAN WINS!\n\n"; humanscore++; }
+		if (hmove == 's'&&cmove == 'r') { cout << "ROCK BEATS SCISSORS SO THE COMPUTER WINS!\n\n"; computertalks(); compscore++; }
+		if (hmove == 'p'&&cmove == 's') { cout << "SCISSORS BEAT PAPER SO THE COMPUTER WINS!\n\n"; computertalks(); compscore++; }
+		if (hmove == 'r'&&cmove == 'p') { cout << "PAPER BEATS ROCK SO THE COMPUTER WINS!\n\n"; computertalks(); compscore++; }
 	}
 	
 	
@@ -161,7 +163,7 @@ int main()
 	srand(time(0));
 	RPS newgame;
 	
-	newgame.run();
+
 	system("PAUSE");
 	return 0;
 }
